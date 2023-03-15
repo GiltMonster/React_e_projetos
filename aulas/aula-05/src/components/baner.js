@@ -19,7 +19,7 @@ function BanerAviso(props) {
                 </div>
                 <div className="modal-footer flex-column border-top-0">
                     {/* <button type="button" className="btn btn-lg btn-primary w-100 mx-0 mb-2">Save changes</button> */}
-                    <button type="button" className="btn btn-lg btn-light w-100 mx-0" data-bs-dismiss="modal" onClick={voltar}>Close</button>
+                    <button type="button" className="btn btn-lg btn-danger w-100 mx-0" data-bs-dismiss="modal" onClick={voltar}>Close</button>
                 </div>
                 </div>
             </div>

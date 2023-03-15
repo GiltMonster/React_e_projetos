@@ -1,10 +1,15 @@
 import HeadBar from "./components/headBar";
+import Conteudo from "./components/conteudo/conteudo";
+
 function App() {
   return (
-    <div className="">
-      <header className="">
+    <div>
         <HeadBar/>
-      </header>
+        <div className="container">
+
+        <Conteudo/>
+
+        </div>
     </div>
   );
 }
