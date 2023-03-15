@@ -22,18 +22,18 @@ function App() {
 
 <div className="container text-center">
 
-      <div class="row">
-        <div class="col-2">
+      <div className="row">
+        <div className="col-2">
           
         </div>
-        <div class="col-8">
+        <div className="col-8">
           <h1>Termo-React</h1>
           
           <Palavra palavra={palavra} setPalavra={setPalavra} /> 
           <button onClick={verifica(palavra)}>Verificar</button>
 
         </div>
-        <div class="col-2">
+        <div className="col-2">
           
           <p>{verifica(palavra)}</p>
 

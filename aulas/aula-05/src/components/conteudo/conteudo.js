@@ -21,7 +21,6 @@ function Conteudo() {
     }
 
 
-
     return (
         <>
             <div className="card m-5">
@@ -32,7 +31,7 @@ function Conteudo() {
                             <label className="col-3">Tema:</label>
                             <label className="col-auto">Geral (por agora :v)</label>
                         </div>
-                        <div className="col" >
+                        <div className="col">
                             <input type="text" className="form-control" placeholder="Digite aqui..." onChange={(e) => {setPalavra(e.target.value)}}/>
             
                             <p>{palavra}</p>
