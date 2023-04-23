@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const RandomContext = createContext();
+export const ContextApi = createContext();
