@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react"
 import { ContextApi } from "../../context/contextApi";
 import { ContextFilm } from "../../context/contextFilme";
+import CardFilme from "./cardFilme";
 
 export default function Filme() {
 
@@ -11,26 +12,32 @@ export default function Filme() {
     function carregaFilme(api) {
         fetch(api)
             .then((response) => response.json())
-            .then((data) =>{
+            .then((data) => {
                 setFilme(data);
             });
     }
 
-   
     React.useEffect(() => {
         carregaFilme(db);
     }, Filme);
 
-
     console.log(filme)
 
-    return(
-        filme?
+    return (
+        filme ?
 
             <ContextFilm.Provider value={filme}>
-                 <>{filme.title}</>
+                <div className="container ">
+                    <h1>HEADER AQUI!!!</h1>
+                    <div className="row col-12">
+                        <CardFilme />
+                        <CardFilme />
+                        <CardFilme />
+                        <CardFilme />
+                    </div>
+                </div>
             </ContextFilm.Provider>
-            
+
             :
 
             <div className="bg-light border rounded-3 m-3 overflow-hidden shadow-sm">

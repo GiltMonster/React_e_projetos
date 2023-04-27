@@ -7,14 +7,15 @@ function Conteudo() {
 
 
     const palavras = {
-        "T.I": "CLAUDIA",
-        "design": ["NELSON"]
+        "t.i": ["CLAUDIA", "ABENZA", "THYAGO"],
+        "design": ["NELSON", "SANDRA"],
+        "lugares": ["NASA", "BIBLIOTECA"]
     }
 
 
     function verifica() {
         console.log(palavras.design[0])
-        if (palavra == palavras["T.I"][0]) {
+        if (palavra === palavras["T.I"]) {
             console.log("entrou")
         }
         
@@ -33,9 +34,7 @@ function Conteudo() {
                         </div>
                         <div className="col">
                             <input type="text" className="form-control" placeholder="Digite aqui..." onChange={(e) => {setPalavra(e.target.value)}}/>
-            
                             <p>{palavra}</p>
-
                         </div>
                     </form>
                 </div>

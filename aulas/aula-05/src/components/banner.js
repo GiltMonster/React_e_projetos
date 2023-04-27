@@ -1,4 +1,4 @@
-function BanerAviso(props) {
+function BannerAviso(props) {
     
     function voltar() {
         props.setLogado();
@@ -28,4 +28,4 @@ function BanerAviso(props) {
     )
 }
 
-export default BanerAviso;
+export default BannerAviso;
