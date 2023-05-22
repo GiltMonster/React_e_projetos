@@ -9,8 +9,8 @@ export default function Filme() {
     const db = useContext(ContextApi);
     const [filme, setFilme] = React.useState();
 
-    function carregaFilme(api) {
-        fetch(api)
+    function carregaFilme() {
+        fetch(db)
             .then((response) => response.json())
             .then((data) => {
                 setFilme(data);
@@ -18,8 +18,8 @@ export default function Filme() {
     }
 
     React.useEffect(() => {
-        carregaFilme(db);
-    }, Filme);
+        carregaFilme();
+    }, []);
 
     console.log(filme)
 

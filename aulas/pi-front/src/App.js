@@ -1,20 +1,23 @@
-import {Routes, Route} from "react-router-dom";
-import Principal from "./components/Principal";
-import NotFound from "./components/NotFound";
-import contextApi from "./context/contextApi";
-
+import { Routes, Route } from "react-router-dom";
+import NotFound from "./pages/NotFound";
+import Home from "./pages/Home"
+import DetalhesFilme from "./pages/DetalhesFilmes";
+import Login from "./pages/Login";
+import PesquisaFilmes from "./components/filme/pesquisaFilmes";
+import Card from "./components/filme/card";
 function App() {
   return (
-  
-    <Routes>
 
-    <Route path="/">
-      <Route index element={<Principal/>}/>
-      
-      <Route path="*" element={<NotFound/>}/>
-    </Route>
-  </Routes>
-    
+    <>
+      <PesquisaFilmes/>
+      <Routes>
+        <Route path="/" index element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/filme" element={<DetalhesFilme />} />
+        <Route path="/pesquisar" element={<Card />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }
 

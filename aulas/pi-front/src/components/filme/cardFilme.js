@@ -14,7 +14,7 @@ export default function CardFilme() {
 
     useEffect(() => {
         data(filme.release_date);
-    }, CardFilme);
+    }, []);
 
     return (
         <div className="card mx-1" style={{width: '18rem'}}>
